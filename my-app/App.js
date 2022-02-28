@@ -20,11 +20,13 @@ export default function App() {
   return (
     
     <View style={styles.container}>     
-        <View style = {styles.square}>
+        
+       <View style = {styles.square}>
        <Text style = {styles.zero}> {num} </Text>
        <Button style={styles.one} title='-' onPress={Decrement} />
        <Button style={styles.two} title='+' onPress={Increment} />
         </View>
+
        <View>
         <Text style= {styles.footer} >Developer Felipe Martins Programer 18</Text>
        </View> 
@@ -45,20 +47,20 @@ const styles = StyleSheet.create({
   }
   ,
   one:{
-   display:'flex',
-   margin:1
+   display:'flex'
   },
   two:{
     display:'flex',
     margin:1
   },
-  square:{
-    backgroundColor:'yellow',
-    position:'absolute'
-  },
+ 
   footer:{
     backgroundColor:'white',
-   marginTop:200
+   marginTop:370
+  },
+
+  square:{
+    padding: 10
   }
 
 });
