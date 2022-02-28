@@ -8,9 +8,11 @@ export default function App() {
       <Text>Remember and practice more and more always</Text>
       </View>
       <View style={styles.box}>
-       <Text></Text>
+       <Text> The Years gonna be my!!!</Text>
       </View>
-      <View style={styles.box}></View>
+      <View style={styles.box}>
+      <Text>My working strugling going be rewards!!!</Text>
+      </View>
      
     </View>
   );
@@ -26,6 +28,8 @@ const styles = StyleSheet.create({
   box:{
     padding:30,
     backgroundColor:'grey',
-    margin:4
+    margin:4,
+    color:'white',
+    textAlign: 'center'
   }
 });
