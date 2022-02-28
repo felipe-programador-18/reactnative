@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
   },
   footer:{
     backgroundColor:'white',
-    paddingEnd:4
+   marginTop:200
   }
 
 });
