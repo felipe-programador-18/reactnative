@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     backgroundColor:'grey',
     margin:4,
     color:'white',
-    textAlign: 'center'
-  }
+    textAlign: 'center',
+  },
+  
 });
