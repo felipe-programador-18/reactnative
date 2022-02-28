@@ -18,12 +18,16 @@ export default function App() {
    }
     
   return (
-    <View style={styles.container}>
-      
-      <Text style = {styles.zero}> {num} </Text>
-      <Button style={styles.one} title='-' onPress={Decrement} />
-      <Button style={styles.two} title='+' onPress={Increment} />
-      
+    
+    <View style={styles.container}>     
+        <View style = {styles.square}>
+       <Text style = {styles.zero}> {num} </Text>
+       <Button style={styles.one} title='-' onPress={Decrement} />
+       <Button style={styles.two} title='+' onPress={Increment} />
+        </View>
+       <View>
+        <Text style= {styles.footer} >Developer Felipe Martins Programer 18</Text>
+       </View> 
       <StatusBar style="auto" />
     </View>
   );
@@ -47,5 +51,14 @@ const styles = StyleSheet.create({
   two:{
     display:'flex',
     margin:1
+  },
+  square:{
+    backgroundColor:'yellow',
+    position:'absolute'
+  },
+  footer:{
+    backgroundColor:'white',
+    paddingEnd:4
   }
+
 });
