@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { Button, StyleSheet, Text, View, Image } from 'react-native';
+import { Button, StyleSheet, Text, View, } from 'react-native';
 
-import logo from './assets/img.jpg'
+
 
 export default function App() {
       
@@ -22,23 +22,27 @@ export default function App() {
   return (
     
     <View style={styles.container}>     
-        
+    
        <View style = {styles.square}>
        <Text style = {styles.zero}> {num} </Text>
-      
        <Button style={styles.one} title='-' onPress={Decrement} />
        <Button style={styles.two} title='+' onPress={Increment} />
-         
+       </View>
        
-        </View>
-
+       <View style= {styles.kind} >
+       <Text>Practice and create</Text>
+       </View>   
+    
+    
        <View>
-       <View>
-            
-        <Text style= {styles.footer} >Developer Fe-Prog-18</Text>
-       </View> 
+       
+        
+         <View>    
+          <Text style= {styles.footer} >Fe-Prog-18</Text>
+         </View> 
      
     </View>
+    
     </View>
   );
 }
@@ -69,6 +73,10 @@ const styles = StyleSheet.create({
 
   square:{
     padding: 10
-  }
-
+  },
+ kind:{
+   padding:30,
+   backgroundColor:'blue'
+   
+ }
 });
